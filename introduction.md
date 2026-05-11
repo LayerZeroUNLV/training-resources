@@ -70,13 +70,15 @@ If you are new, start broad before going deep. These documents introduce major a
 | Step | Document | Why Start Here |
 |------|----------|----------------|
 | 1 | [Setting Up Your Environment](https://www.layer-zero.org/training/getting-started/setting-up-your-environment) | A safe, resettable lab setup makes every later topic easier to practice. |
-| 2 | [Beginner Linux Command Line Foundations](https://www.layer-zero.org/training/linux/beginner-linux-command-line-foundations) | Many cybersecurity tools and labs expect basic command-line comfort. |
-| 3 | [Beginner Networking Foundations](https://www.layer-zero.org/training/networking/beginner-networking-foundations) | Networking explains how systems communicate and why traffic evidence matters. |
-| 4 | [Beginner Web Security Foundations](https://www.layer-zero.org/training/web-security/beginner-web-security-foundations) | Web challenges are common and teach request, response, and trust boundaries. |
-| 5 | [Beginner Cryptography Foundations](https://www.layer-zero.org/training/cryptography/beginner-cryptography-foundations) | Crypto builds careful thinking around transformations, keys, encoding, and hashing. |
-| 6 | [Beginner Digital Forensics Foundations](https://www.layer-zero.org/training/forensics/beginner-digital-forensics-foundations) | Forensics teaches evidence handling, file inspection, metadata, and timelines. |
-| 7 | [Beginner OSINT Foundations](https://www.layer-zero.org/training/osint/beginner-osint-foundations) | OSINT builds research habits, source evaluation, and confidence checks. |
-| 8 | [Beginner Reverse Engineering Foundations](https://www.layer-zero.org/training/reverse-engineering/beginner-reverse-engineering-foundations) | Reverse engineering teaches how to inspect program behavior and hidden logic. |
+| 2 | [How To Approach CTF Challenges](https://www.layer-zero.org/training/getting-started/how-to-approach-ctf-challenges) | A repeatable challenge workflow helps across every category. |
+| 3 | [Tools And Resources](https://www.layer-zero.org/training/getting-started/tools-and-resources) | A central reference helps you choose tools based on the question you are asking. |
+| 4 | [Beginner Linux Command Line Foundations](https://www.layer-zero.org/training/linux/beginner-linux-command-line-foundations) | Many cybersecurity tools and labs expect basic command-line comfort. |
+| 5 | [Beginner Networking Foundations](https://www.layer-zero.org/training/networking/beginner-networking-foundations) | Networking explains how systems communicate and why traffic evidence matters. |
+| 6 | [Beginner Web Security Foundations](https://www.layer-zero.org/training/web-security/beginner-web-security-foundations) | Web challenges are common and teach request, response, and trust boundaries. |
+| 7 | [Beginner Cryptography Foundations](https://www.layer-zero.org/training/cryptography/beginner-cryptography-foundations) | Crypto builds careful thinking around transformations, keys, encoding, and hashing. |
+| 8 | [Beginner Digital Forensics Foundations](https://www.layer-zero.org/training/forensics/beginner-digital-forensics-foundations) | Forensics teaches evidence handling, file inspection, metadata, and timelines. |
+| 9 | [Beginner OSINT Foundations](https://www.layer-zero.org/training/osint/beginner-osint-foundations) | OSINT builds research habits, source evaluation, and confidence checks. |
+| 10 | [Beginner Reverse Engineering Foundations](https://www.layer-zero.org/training/reverse-engineering/beginner-reverse-engineering-foundations) | Reverse engineering teaches how to inspect program behavior and hidden logic. |
 
 The order is only a recommendation. If a challenge interests you, try it. Interest is useful, and moving between categories helps you build connections.
 
