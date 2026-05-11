@@ -13,7 +13,10 @@ Open-source intelligence, or OSINT, is the practice of collecting and analyzing 
 
 This guide is a reference, not a search recipe that works every time. OSINT problems can be solved through search engines, archived pages, metadata, maps, public records, social platforms, source comparison, or careful reading. The strongest solutions explain why the evidence is reliable.
 
-> Practice this topic with OSINT challenges in the [Layer Zero Lab](https://lab.layer-zero.org). Use this page as a guide while you work, but let the challenge evidence drive your decisions.
+<!-- `notes`
+Practice this topic with OSINT challenges in the [Layer Zero Lab](https://lab.layer-zero.org).
+Use this page as a guide while you work, but let the challenge evidence drive your decisions.
+-->
 
 ## Prerequisites
 

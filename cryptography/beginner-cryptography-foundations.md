@@ -13,7 +13,10 @@ Cryptography is the practice of protecting information using math, rules, and ca
 
 This guide is a reference, not a complete solution book. Real challenges can usually be solved in more than one way. A tool might help, a manual pattern might reveal the answer, or a small script might make the problem clearer. The goal is to learn how to think through the evidence instead of memorizing one fixed process.
 
-> Practice this topic with cryptography challenges in the [Layer Zero Lab](https://lab.layer-zero.org). Use this page as a guide while you work, but let the challenge evidence drive your decisions.
+<!-- `notes`
+Practice this topic with cryptography challenges in the [Layer Zero Lab](https://lab.layer-zero.org).
+Use this page as a guide while you work, but let the challenge evidence drive your decisions.
+-->
 
 ## Prerequisites
 

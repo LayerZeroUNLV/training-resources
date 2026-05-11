@@ -13,7 +13,10 @@ Web security is the practice of finding, understanding, and fixing weaknesses in
 
 This guide is a reference, not a complete answer key. Web challenges can often be solved by reading page source, watching network traffic, changing a request, comparing user roles, or following clues in the application. Your job is to observe carefully and test one idea at a time.
 
-> Practice this topic with web security challenges in the [Layer Zero Lab](https://lab.layer-zero.org). Use this page as a guide while you work, but let the challenge evidence drive your decisions.
+<!-- `notes`
+Practice this topic with web security challenges in the [Layer Zero Lab](https://lab.layer-zero.org).
+Use this page as a guide while you work, but let the challenge evidence drive your decisions.
+-->
 
 ## Prerequisites
 

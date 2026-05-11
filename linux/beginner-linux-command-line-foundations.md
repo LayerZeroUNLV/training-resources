@@ -13,7 +13,10 @@ Linux command-line skills help you inspect files, run tools, read logs, and auto
 
 This guide is a reference, not a list of commands to run blindly. A challenge can often be solved with several different commands. The important skill is knowing what question you are asking and choosing a command that answers it.
 
-> Practice this topic with Linux and command-line challenges in the [Layer Zero Lab](https://lab.layer-zero.org). Use this page as a guide while you work, but let the challenge evidence drive your decisions.
+<!-- `notes`
+Practice this topic with Linux and command-line challenges in the [Layer Zero Lab](https://lab.layer-zero.org).
+Use this page as a guide while you work, but let the challenge evidence drive your decisions.
+-->
 
 ## Prerequisites
 

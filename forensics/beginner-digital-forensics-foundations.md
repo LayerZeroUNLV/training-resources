@@ -13,7 +13,10 @@ Digital forensics is the practice of examining digital evidence to understand wh
 
 This guide is a reference, not a single path to every answer. A forensics challenge might be solved by inspecting metadata, checking file signatures, reading logs, recovering hidden data, or comparing timestamps. Let the evidence guide the method.
 
-> Practice this topic with forensics challenges in the [Layer Zero Lab](https://lab.layer-zero.org). Use this page as a guide while you work, but let the challenge evidence drive your decisions.
+<!-- `notes`
+Practice this topic with forensics challenges in the [Layer Zero Lab](https://lab.layer-zero.org).
+Use this page as a guide while you work, but let the challenge evidence drive your decisions.
+-->
 
 ## Prerequisites
 

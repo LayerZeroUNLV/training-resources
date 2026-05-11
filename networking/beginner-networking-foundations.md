@@ -13,7 +13,10 @@ Networking is how computers communicate. In cybersecurity training, networking c
 
 This guide is a reference, not a complete solution path. A network challenge might be solved by reading a packet capture, checking a port, following a protocol, or comparing what should happen against what did happen.
 
-> Practice this topic with networking challenges in the [Layer Zero Lab](https://lab.layer-zero.org). Use this page as a guide while you work, but let the challenge evidence drive your decisions.
+<!-- `notes`
+Practice this topic with networking challenges in the [Layer Zero Lab](https://lab.layer-zero.org).
+Use this page as a guide while you work, but let the challenge evidence drive your decisions.
+-->
 
 ## Prerequisites
 

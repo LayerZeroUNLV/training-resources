@@ -14,6 +14,12 @@ Welcome to the Layer Zero training documents. These pages are designed to help l
 
 The goal is not to provide a single answer path for every challenge. Cybersecurity work often involves incomplete information, multiple possible approaches, and evidence that needs to be tested carefully. Use these documents as references while you practice, but expect to think, compare options, and explain why your approach makes sense.
 
+<!-- `notes`
+Practice hands-on in the [Layer Zero Lab](https://lab.layer-zero.org).
+Check the [Layer Zero Discord](https://discord.gg/ftmmWdnGmC) for CTFs, updates, and community guidance.
+Browse all training material from [Layer Zero Training](https://www.layer-zero.org/training).
+-->
+
 ## What These Documents Are For
 
 These documents are meant to help you:

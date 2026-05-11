@@ -13,7 +13,10 @@ Reverse engineering is the practice of studying how something works when you do 
 
 This guide is a reference, not a universal solve method. A reverse engineering challenge might be solved by reading strings, running the program safely, tracing input checks, inspecting code in a decompiler, or simplifying the logic into notes.
 
-> Practice this topic with reverse engineering challenges in the [Layer Zero Lab](https://lab.layer-zero.org). Use this page as a guide while you work, but let the challenge evidence drive your decisions.
+<!-- `notes`
+Practice this topic with reverse engineering challenges in the [Layer Zero Lab](https://lab.layer-zero.org).
+Use this page as a guide while you work, but let the challenge evidence drive your decisions.
+-->
 
 ## Prerequisites
 
@@ -171,7 +174,9 @@ Online tools can be useful for beginner labs, especially when you cannot install
 | Binary Ninja Cloud | Browser-based binary analysis, graphs, strings, and function exploration | [Binary Ninja Cloud](https://cloud.binary.ninja/) |
 | Compiler Explorer | Learning how small source code examples compile into assembly; this is a learning aid, not a decompiler | [Compiler Explorer](https://godbolt.org/) |
 
-Be careful with online tools. Do not upload private organizational software, malware samples from real incidents, proprietary binaries, secrets, or anything you are not allowed to share. For training challenges, online tools can be helpful, but local tools are safer when the file contents matter.
+<!-- `warning` Only upload files to online tools when you are authorized to share them. Do not upload private organizational software, real incident artifacts, proprietary binaries, secrets, or unknown sensitive files. -->
+
+For training challenges, online tools can be helpful, but local tools are safer when the file contents matter.
 
 Good habits:
 
