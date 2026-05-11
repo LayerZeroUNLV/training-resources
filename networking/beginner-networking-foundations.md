@@ -1,5 +1,6 @@
 ---
 title: "Beginner Networking Foundations"
+order: 1
 category: "networking"
 description: "A beginner-friendly introduction to networking concepts, traffic analysis, and challenge-solving habits."
 author: "Layer Zero"

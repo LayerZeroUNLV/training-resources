@@ -1,5 +1,7 @@
 ---
 title: "Introduction"
+order: 1
+featured: true
 category: "getting-started"
 description: "An introduction to Layer Zero training documents, available resources, and suggested beginner learning paths."
 author: "Layer Zero"

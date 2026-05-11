@@ -1,5 +1,6 @@
 ---
 title: "Beginner Digital Forensics Foundations"
+order: 1
 category: "forensics"
 description: "A beginner-friendly introduction to digital forensics concepts, evidence handling, and analysis habits."
 author: "Layer Zero"

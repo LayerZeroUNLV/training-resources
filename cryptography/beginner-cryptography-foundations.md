@@ -1,5 +1,6 @@
 ---
 title: "Beginner Cryptography Foundations"
+order: 1
 category: "cryptography"
 description: "A beginner-friendly introduction to cryptography concepts, challenge-solving habits, and common starting points."
 author: "Layer Zero"

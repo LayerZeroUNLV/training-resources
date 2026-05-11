@@ -1,5 +1,6 @@
 ---
 title: "Beginner Reverse Engineering Foundations"
+order: 1
 category: "reverse-engineering"
 description: "A beginner-friendly introduction to reverse engineering concepts, static analysis, and challenge-solving habits."
 author: "Layer Zero"
@@ -95,19 +96,24 @@ Useful reasoning habit: identify the check, then work backward from the success 
 
 Decompilers try to show low-level program logic as higher-level code. Disassemblers show assembly instructions.
 
-Helpful tools include:
+Common tools include:
 
-- Ghidra
-- Binary Ninja
-- IDA Free
-- objdump
-- radare2 or rizin
+| Tool | Type | Useful For | Link |
+|------|------|------------|------|
+| Ghidra | Local decompiler and disassembler | Free static analysis, decompilation, graphing, scripting | [Ghidra](https://github.com/NationalSecurityAgency/ghidra) |
+| IDA Free | Local disassembler with cloud decompiler access | Learning a widely used commercial-style workflow at no cost for non-commercial use | [IDA Free](https://hex-rays.com/ida-free) |
+| Binary Ninja | Local and cloud binary analysis platform | Decompilation, disassembly, graph views, and approachable analysis workflows | [Binary Ninja](https://binary.ninja/free) |
+| Cutter | Local graphical reverse engineering platform | A free GUI built around Rizin with integrated decompiler support | [Cutter](https://cutter.re/) |
+| Rizin | Local command-line reverse engineering framework | Binary inspection, disassembly, debugging, scripting, and analysis from the terminal | [Rizin](https://rizin.re/) |
+| radare2 | Local command-line reverse engineering framework | Binary analysis, disassembly, debugging, patching, and scripting | [radare2](https://radare2.com/) |
+| objdump | Local disassembler utility | Quick disassembly and binary metadata inspection on many Linux systems | [GNU Binutils](https://www.gnu.org/software/binutils/) |
 
 Beginner advice:
 
 - Start at obvious functions like `main`.
 - Rename variables and functions as you understand them.
 - Look for calls that compare strings or print success messages.
+- Compare decompiler output against disassembly when something looks wrong.
 - Do not try to understand the whole binary at once.
 
 ## Debugging
@@ -157,6 +163,16 @@ Use debugging in a safe lab environment. Unknown programs should not be run on s
 
 Reverse engineering tools can show a lot of information quickly. More output does not always mean more understanding.
 
+Online tools can be useful for beginner labs, especially when you cannot install a full tool locally.
+
+| Resource | Use It For | Link |
+|----------|------------|------|
+| Dogbolt Decompiler Explorer | Comparing the same binary across multiple decompilers in the browser | [Dogbolt](https://dogbolt.org/) |
+| Binary Ninja Cloud | Browser-based binary analysis, graphs, strings, and function exploration | [Binary Ninja Cloud](https://cloud.binary.ninja/) |
+| Compiler Explorer | Learning how small source code examples compile into assembly; this is a learning aid, not a decompiler | [Compiler Explorer](https://godbolt.org/) |
+
+Be careful with online tools. Do not upload private organizational software, malware samples from real incidents, proprietary binaries, secrets, or anything you are not allowed to share. For training challenges, online tools can be helpful, but local tools are safer when the file contents matter.
+
 Good habits:
 
 - Start with simple tools.
@@ -170,6 +186,7 @@ Good habits:
 - Analyze only files you are authorized to inspect.
 - Use a lab virtual machine or container for unknown binaries.
 - Avoid running unknown programs on systems with sensitive data.
+- Avoid uploading sensitive binaries or real incident artifacts to public online tools.
 - Prefer static analysis before dynamic execution.
 - Record tool output and observations so your process is repeatable.
 

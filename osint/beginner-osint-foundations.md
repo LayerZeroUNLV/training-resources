@@ -1,5 +1,6 @@
 ---
 title: "Beginner OSINT Foundations"
+order: 1
 category: "osint"
 description: "A beginner-friendly introduction to open-source intelligence concepts, source evaluation, and research habits."
 author: "Layer Zero"

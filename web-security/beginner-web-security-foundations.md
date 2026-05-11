@@ -1,5 +1,6 @@
 ---
 title: "Beginner Web Security Foundations"
+order: 1
 category: "web-security"
 description: "A beginner-friendly introduction to web security concepts, request analysis, and challenge-solving habits."
 author: "Layer Zero"

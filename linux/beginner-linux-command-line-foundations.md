@@ -1,5 +1,6 @@
 ---
 title: "Beginner Linux Command Line Foundations"
+order: 1
 category: "linux"
 description: "A beginner-friendly introduction to Linux command-line skills for cybersecurity training."
 author: "Layer Zero"
