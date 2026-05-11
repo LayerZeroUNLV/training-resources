@@ -4,7 +4,9 @@ Training documents in this repo are published on the Layer Zero website:
 
 [https://www.layer-zero.org/training](https://www.layer-zero.org/training)
 
-The site uses a custom Markdown renderer. For the full renderer reference, see [lz-markdown-guide.md](./lz-markdown-guide.md).
+The site uses a custom Markdown renderer. This README is the authoring guide for both training content and renderer-specific Markdown features.
+
+Do not add standalone Markdown reference files to this repo unless they are meant to appear on the website. Markdown files without front matter may still be grouped into the site's general category.
 
 ## Writing Goals
 
@@ -151,17 +153,19 @@ Wrap up the key takeaways here.
 
 ## Supported Markdown
 
-The renderer supports GitHub Flavored Markdown, including:
+The renderer supports GitHub Flavored Markdown through `remark-gfm`, including:
 
-- Headings
-- Bold and italics
+- Headings (`#`, `##`, `###`)
+- Bold (`**bold**`) and italics (`*italic*`)
 - Ordered and unordered lists
-- Tables
-- Blockquotes
-- Inline code
-- Strikethrough
-- Task lists
+- Tables with a header separator row
+- Blockquotes (`>`)
+- Inline code (`` `like this` ``)
+- Strikethrough (`~~struck~~`)
+- Task lists (`- [ ]` and `- [x]`)
 - Autolinked URLs
+
+These features receive Layer Zero themed styling automatically on the website.
 
 Use fenced code blocks with a language name whenever possible:
 
@@ -173,6 +177,8 @@ strings challenge.bin | head
 ````
 
 Supported languages are whatever `react-syntax-highlighter` supports, including common values such as `bash`, `python`, `javascript`, `typescript`, `json`, `yaml`, `go`, and `rust`.
+
+Fenced code blocks render with syntax highlighting and a copy button. The block title defaults to the language name. Use single backticks for short inline code instead of a fenced block.
 
 ## Custom Callouts
 
@@ -194,11 +200,24 @@ Supported single-line callout types:
 <!-- `danger` Use this for high-risk actions or serious warnings. -->
 ```
 
+Callout types:
+
+| Type | Use | Render Style |
+|------|-----|--------------|
+| `note` | Neutral context or reminders | Blue note panel |
+| `warning` | Important caution | Yellow warning panel |
+| `danger` | High-risk actions or serious warnings | Red danger panel |
+| `tip` | Helpful suggestions | Green tip panel |
+| `info` | Extra background | Cyan info panel |
+| `notes` | Grouped multi-line reminders with inline Markdown | Purple notes panel |
+
 Important callout rules:
 
 - The callout type must be wrapped in backticks.
 - Single-line callouts render plain text. Markdown links inside them are not parsed.
-- Use `notes` when you need multiple lines, bullets, or inline Markdown links.
+- Only `notes` splits non-empty lines into separate bullets.
+- Use `notes` when you need multiple lines, bullets, bold, italics, inline code, or Markdown links.
+- Do not put raw HTML inside callouts. It is not parsed as HTML.
 
 Example `notes` callout:
 
@@ -235,6 +254,8 @@ echo "hello"
 
 Use this when showing the same idea in multiple languages or tools. For most beginner training docs, normal fenced code blocks are simpler and easier to read.
 
+The renderer extracts each fenced block inside the `code` comment and creates one tab per language.
+
 ## Links
 
 Use normal Markdown links:
@@ -254,6 +275,27 @@ Section links can use normal anchors:
 ```md
 [Jump to the summary](#summary)
 ```
+
+External links open in a new tab on the website. Section anchors can link to headings in the same document.
+
+## Renderer Implementation Notes
+
+The custom syntax is implemented in the Layer Zero website codebase, not in this repo:
+
+- `src/lib/remarkCommentPlugin.ts` walks the Markdown AST, finds HTML comments that start with a backtick-quoted type, and converts them into typed data.
+- `src/app/_components/shared/markdown.tsx` renders those typed comment blocks as Layer Zero components.
+
+Special parse paths:
+
+- `code` extracts fenced code blocks into tabbed examples.
+- `notes` splits non-empty lines into bullet-style reminders.
+- Other callouts store the remaining text as single-line content.
+
+To add a new callout type in the website:
+
+1. Add a parse branch in `remarkCommentPlugin.ts` only if the data shape is more complex than plain content.
+2. Add a component to the renderer's `CommentComponents` map.
+3. Use it in Markdown as `<!-- \`yourtype\` ... -->`.
 
 ## Content Guidance
 
@@ -288,4 +330,6 @@ When writing cybersecurity content:
 - Using `featured: true` on more than one document.
 - Forgetting backticks in callout syntax, such as `<!-- note ... -->`.
 - Putting Markdown links inside single-line callouts instead of using `notes`.
+- Mixing fenced code blocks inside callouts other than `code`.
 - Omitting the language from fenced code blocks.
+- Adding non-training Markdown files that the website may publish accidentally.
