@@ -16,7 +16,7 @@ This page is a starting reference for common tools and Layer Zero resources. You
 <!-- `notes`
 Practice hands-on in the [Layer Zero Lab](https://lab.layer-zero.org).
 Check the [Layer Zero Discord](https://discord.gg/ftmmWdnGmC) for CTF updates, community guidance, and event announcements.
-If you are new to lab setup, read [Setting Up Your Environment](https://www.layer-zero.org/training/getting-started/setting-up-your-environment) first.
+If you are new to lab setup, read [Setting Up Your Environment](https://www.layer-zero.org/training/setting-up-your-environment) first.
 -->
 
 ## Layer Zero Resources

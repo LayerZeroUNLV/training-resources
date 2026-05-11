@@ -16,7 +16,7 @@ The best CTF learners are not the people who instantly know the answer. They are
 <!-- `notes`
 Practice this workflow in the [Layer Zero Lab](https://lab.layer-zero.org).
 Check the [Layer Zero Discord](https://discord.gg/ftmmWdnGmC) for CTF updates and community guidance.
-If you have not prepared a lab environment yet, start with [Setting Up Your Environment](https://www.layer-zero.org/training/getting-started/setting-up-your-environment).
+If you have not prepared a lab environment yet, start with [Setting Up Your Environment](https://www.layer-zero.org/training/setting-up-your-environment).
 -->
 
 ## Prerequisites

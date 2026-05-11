@@ -20,7 +20,28 @@ Good training docs should:
 
 ## File Organization
 
-Place training documents in a category folder when possible:
+Root-level Markdown files with front matter are treated as `getting-started` documents by the website. Use the root for orientation, setup, methodology, and broad resource pages.
+
+```text
+introduction.md
+setting-up-your-environment.md
+how-to-approach-ctf-challenges.md
+tools-and-resources.md
+```
+
+Root-level training URLs use this shape:
+
+```text
+https://www.layer-zero.org/training/[slug]
+```
+
+Example:
+
+```text
+https://www.layer-zero.org/training/setting-up-your-environment
+```
+
+Place topic-specific training documents in a category folder:
 
 ```text
 cryptography/beginner-cryptography-foundations.md
@@ -28,7 +49,7 @@ forensics/beginner-digital-forensics-foundations.md
 web-security/beginner-web-security-foundations.md
 ```
 
-The public URL uses this shape:
+Category training URLs use this shape:
 
 ```text
 https://www.layer-zero.org/training/[category]/[slug]
@@ -77,7 +98,8 @@ Front matter notes:
 - `description` appears in training listings and previews.
 - `order` controls sorting inside a category. Lower numbers appear first. Missing values sort last.
 - `featured: true` promotes a document to the training page's "Start Here" area. Only one document should use it.
-- `category` can override the directory-derived category. Use it for root-level documents or when an explicit override is needed.
+- Root-level documents are automatically grouped as getting-started pages by the website.
+- `category` can override the directory-derived category. Use it when an explicit override is needed.
 - `tags` should be short, lowercase topic labels.
 
 ## Basic Document Template

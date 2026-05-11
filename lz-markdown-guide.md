@@ -180,10 +180,11 @@ featured: true      # Pins this doc to the "Start Here" hero on /training.
 ```
 
 - `order` controls the sort within a category. Lower runs first; missing values sort last.
-- `featured: true` promotes the doc to the "Start Here" panel on the listing page. Only one should have it; the first match wins. If no doc has `featured: true`, the listing falls back to `getting-started/introduction`.
-- `category` overrides the directory-derived category. Generally let the directory name win and omit this field.
+- `featured: true` promotes the doc to the "Start Here" panel on the listing page. Only one should have it; the first match wins. If no doc has `featured: true`, the listing falls back to the root-level `introduction` document.
+- Root-level training docs with frontmatter are grouped as getting-started pages by the website.
+- `category` overrides the directory-derived category. Generally let the directory name win for category folders and use root-level files for getting-started docs.
 
-The category named `getting-started` is always pinned to the top of the `/training` listing regardless of alphabetical order, so new contributors hit it first.
+Getting-started content is always pinned to the top of the `/training` listing regardless of alphabetical order, so new contributors hit it first.
 
 ## How the Custom Syntax Works
 
